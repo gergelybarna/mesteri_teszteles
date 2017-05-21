@@ -1,0 +1,584 @@
+-------------------------------------------------------------------------------
+Test set: ro.sapientia.mesteri2015.SCRUMTitleTest
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 0, Errors: 8, Skipped: 6, Time elapsed: 242.548 sec <<< FAILURE!
+Scenario: UpdateFirst  Time elapsed: 66.996 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"52.0.2","st":1491395931293}}}
+1495375169933	addons.xpi	DEBUG	No changes found
+1495375169942	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375169942	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375169947	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1495375169948	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375169949	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375169954	addons.xpi	DEBUG	Calling bootstrap method startup on deployment-checker@mozilla.org version 1.0
+1495375169954	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375169955	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375169957	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.9
+1495375169958	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375169958	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375169962	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1495375169969	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\BarniKa\AppData\Local\Temp\anonymous2550590039527502105webdriver-profile\extensions.json
+1495375169970	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375169971	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375169973	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1495375169975	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1495375169976	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1495375169976	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1495375169976	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1495375169976	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1495375169977	addons.manager	DEBUG	Starting provider: GMPProvider
+1495375169985	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1495375169986	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1495375169986	addons.manager	DEBUG	Starting provider: PluginProvider
+1495375169986	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1495375169986	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1495375169987	addons.manager	DEBUG	Completed startup sequence
+1495375170259	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1495375170259	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1495375170262	addons.xpi-utils	DEBUG	Successfully read XPI database
+1495375170276	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1495375170276	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1495375170276	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1495375170394	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1495375170394	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1495375170394	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-K8GMDGQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at ro.sapientia.mesteri2015.test.SCRUMSprintUpdateStepDefinition.setup(SCRUMSprintUpdateStepDefinition.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:175)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:32)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"52.0.2","st":1491395931293}}}
+1495375169933	addons.xpi	DEBUG	No changes found
+1495375169942	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375169942	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375169947	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1495375169948	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375169949	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375169954	addons.xpi	DEBUG	Calling bootstrap method startup on deployment-checker@mozilla.org version 1.0
+1495375169954	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375169955	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375169957	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.9
+1495375169958	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375169958	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375169962	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1495375169969	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\BarniKa\AppData\Local\Temp\anonymous2550590039527502105webdriver-profile\extensions.json
+1495375169970	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375169971	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375169973	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1495375169975	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1495375169976	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1495375169976	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1495375169976	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1495375169976	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1495375169977	addons.manager	DEBUG	Starting provider: GMPProvider
+1495375169985	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1495375169986	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1495375169986	addons.manager	DEBUG	Starting provider: PluginProvider
+1495375169986	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1495375169986	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1495375169987	addons.manager	DEBUG	Completed startup sequence
+1495375170259	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1495375170259	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1495375170262	addons.xpi-utils	DEBUG	Successfully read XPI database
+1495375170276	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1495375170276	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1495375170276	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1495375170394	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1495375170394	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1495375170394	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 50 more
+Scenario: UpdateFirst  Time elapsed: 112.202 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Unable to bind to locking port 7054 within 45000 ms
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-K8GMDGQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.internal.SocketLock.lock(SocketLock.java:98)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:84)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at ro.sapientia.mesteri2015.test.SCRUMTitleStepDefinition.setup(SCRUMTitleStepDefinition.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:175)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:32)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Scenario: UpdateFirst  Time elapsed: 112.211 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ro.sapientia.mesteri2015.test.SCRUMSprintUpdateStepDefinition.closeBrowser(SCRUMSprintUpdateStepDefinition.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:179)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Scenario: UpdateFirst  Time elapsed: 112.213 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ro.sapientia.mesteri2015.test.SCRUMTitleStepDefinition.closeBrowser(SCRUMTitleStepDefinition.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:179)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Scenario: Title1  Time elapsed: 83.702 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"52.0.2","st":1491395931293}}}
+1495375298952	addons.xpi	DEBUG	No changes found
+1495375298963	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375298964	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375298970	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1495375298971	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375298972	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375298978	addons.xpi	DEBUG	Calling bootstrap method startup on deployment-checker@mozilla.org version 1.0
+1495375298978	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375298979	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375298981	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.9
+1495375298982	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375298983	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375298987	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1495375298995	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\BarniKa\AppData\Local\Temp\anonymous434098578084281402webdriver-profile\extensions.json
+1495375298996	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375298997	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375299000	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1495375299002	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1495375299002	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1495375299002	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1495375299003	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1495375299003	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1495375299004	addons.manager	DEBUG	Starting provider: GMPProvider
+1495375299015	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1495375299015	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1495375299016	addons.manager	DEBUG	Starting provider: PluginProvider
+1495375299016	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1495375299016	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1495375299017	addons.manager	DEBUG	Completed startup sequence
+1495375299274	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1495375299274	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1495375299277	addons.xpi-utils	DEBUG	Successfully read XPI database
+1495375299291	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1495375299291	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1495375299292	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1495375299409	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1495375299410	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1495375299410	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-K8GMDGQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at ro.sapientia.mesteri2015.test.SCRUMSprintUpdateStepDefinition.setup(SCRUMSprintUpdateStepDefinition.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:175)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:32)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+6-7e08-4474-a285-3208198ce6fd}":{"d":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","e":true,"v":"52.0.2","st":1491395931293}}}
+1495375298952	addons.xpi	DEBUG	No changes found
+1495375298963	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375298964	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1495375298970	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1495375298971	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375298972	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\deployment-checker@mozilla.org.xpi
+1495375298978	addons.xpi	DEBUG	Calling bootstrap method startup on deployment-checker@mozilla.org version 1.0
+1495375298978	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375298979	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1495375298981	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.9
+1495375298982	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375298983	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1495375298987	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1495375298995	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\BarniKa\AppData\Local\Temp\anonymous434098578084281402webdriver-profile\extensions.json
+1495375298996	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375298997	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1495375299000	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1495375299002	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1495375299002	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1495375299002	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1495375299003	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1495375299003	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1495375299004	addons.manager	DEBUG	Starting provider: GMPProvider
+1495375299015	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1495375299015	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1495375299016	addons.manager	DEBUG	Starting provider: PluginProvider
+1495375299016	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1495375299016	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1495375299017	addons.manager	DEBUG	Completed startup sequence
+1495375299274	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1495375299274	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1495375299277	addons.xpi-utils	DEBUG	Successfully read XPI database
+1495375299291	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1495375299291	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1495375299292	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1495375299409	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1495375299410	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1495375299410	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 50 more
+Scenario: Title1  Time elapsed: 129.778 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: Unable to bind to locking port 7054 within 45000 ms
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: 'DESKTOP-K8GMDGQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.internal.SocketLock.lock(SocketLock.java:98)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:84)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:191)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+	at ro.sapientia.mesteri2015.test.SCRUMTitleStepDefinition.setup(SCRUMTitleStepDefinition.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:175)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:32)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Scenario: Title1  Time elapsed: 129.782 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ro.sapientia.mesteri2015.test.SCRUMSprintUpdateStepDefinition.closeBrowser(SCRUMSprintUpdateStepDefinition.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:179)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Scenario: Title1  Time elapsed: 129.784 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ro.sapientia.mesteri2015.test.SCRUMTitleStepDefinition.closeBrowser(SCRUMTitleStepDefinition.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:44)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)
+	at cucumber.runtime.Utils.invoke(Utils.java:40)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:194)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:185)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:179)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
